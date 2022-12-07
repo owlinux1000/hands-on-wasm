@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "0.0.0.0:8888:8080/tcp"
+    working_dir: /root
+    entrypoint: /bin/bash
+    tty: true
+    stdin_open: true
